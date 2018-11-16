@@ -18,7 +18,7 @@ export default class Pitch extends React.Component {
   componentDidMount() {
     window.addEventListener("resize", this.getPitchCoords)
     this.getPitchCoords()
-    this.setState({ lineupName: 'TIÊU ĐỀ ĐỘI })
+    this.setState({ lineupName: 'TIÊU ĐỀ ĐỘI' })
     // Hide lineup name field on every click outside of it
     document.addEventListener("touchstart", e => {
       if (e.target !== document.querySelector(".EditLineupName")) {
